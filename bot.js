@@ -10,6 +10,10 @@ client.on('ready', () => {
  console.log(`Logged in as ${client.user.tag}!`);
  });
 
+let days = 0;
+
+ 
+
 client.on('message', msg => {
  if (msg.content.toLowerCase().includes('im ')) {
     if (msg.content.toLowerCase().includes('im dad')){
@@ -22,19 +26,24 @@ client.on('message', msg => {
   msg.channel.send('A ham sandwich walks into a bar and orders a beer. Bartender says...');
   msg.reply("Sorry we don't serve food here.");
  }
- });
-
-let days = 0;
-client.on('message', msg => {
-    if (msg.content.toLowerCase().includes('do nofap')){
-        setInterval(function () {
+ else if (msg.content.toLowerCase().includes('do nofap')){
+  setInterval(function () {
+            if (days ==0){
+              msg.reply("No fap - Day: 0. You can do this!");
+              days++;
+             } else {
             msg.reply("No fap - Day:  "+days);
             days++;
-        },86400000)
-    }
+            }
+        },86400000);
+ };
 
 });
-//
+
+
+
+ 
+
 
 
  
