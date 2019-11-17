@@ -5,7 +5,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client({
 	token: process.env.BOT_TOKEN,
-	autorun: true
+  autorun: true
 });
 
 client.on('ready', () => {
