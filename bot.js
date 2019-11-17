@@ -27,12 +27,13 @@ client.on('message', msg => {
   msg.reply("Sorry we don't serve food here.");
  }
  else if (msg.content.toLowerCase().includes('do nofap')){
+  msg.reply("No fap - Day: 0. Let's do this!");
   setInterval(function () {
             
             msg.reply("No fap - Day:  "+days);
             days++;
             
-        },1000);
+        },86400000);
  };
 
 });
