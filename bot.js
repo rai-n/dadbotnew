@@ -22,20 +22,17 @@ client.on('message', msg => {
     let x = msg.content.toLowerCase().replace('im', "");
     msg.channel.send('Hi'+x+ ", i'm dad!");
   }
- } else if (msg.content === 'dadjoke'){
+ } else if (msg.content === 'dasjoke'){
   msg.channel.send('A ham sandwich walks into a bar and orders a beer. Bartender says...');
   msg.reply("Sorry we don't serve food here.");
  }
  else if (msg.content.toLowerCase().includes('do nofap')){
   setInterval(function () {
-            if (days ==0){
-              msg.reply("No fap - Day: 0. You can do this!");
-              days++;
-             } else {
+            
             msg.reply("No fap - Day:  "+days);
             days++;
-            }
-        },86400000);
+            
+        },1000);
  };
 
 });
