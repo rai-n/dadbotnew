@@ -2,9 +2,9 @@
   "name": "dadbot",
   "version": "1.0.0",
   "description": "Votes",
-  "main": "main.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "node bot.js"
   },
   "author": "Neer",
   "dependencies": {
